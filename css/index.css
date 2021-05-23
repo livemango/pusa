@@ -1,0 +1,224 @@
+/* 首页主体部分——start */
+.main{
+    width:980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top:10px;
+}
+.focus{
+    float:left;
+    width: 721px;
+    height: 455px;
+    background-color: pink;
+
+}
+.newflash{
+    float:right;
+    width: 250px;
+    height: 455px;
+    background-color: rgb(247, 92, 120);
+
+}
+.news{
+    height:165px;
+    border: 1px solid #e4e4e4;
+    background-color: rgb(252, 143, 161);
+}
+.news_hd{
+    height: 33px;
+    line-height: 33px;
+    /* padding:0 15px中间没有逗号 */
+    padding:0 15px;
+    border:1px dotted #e4e4e4;
+}
+.news_hd h5{
+    font-size: 14px;
+    float:left;
+}
+.news_hd a{
+    float:right;
+}
+.news_hd a::after{
+    content:">";
+}
+.news_bd li{
+    margin: 5px 0;
+    padding-left:15px;
+    font-size: 14px;
+     /* 溢出部分改为省略号 */
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow:ellipsis;
+}
+.lifeservice{
+    overflow: hidden;
+    /* 隐藏的是溢出的ul li */
+    height:209px;
+    border:1px solid #e4e4e4;
+    border-top: 0;
+    border-bottom: 0;
+    background-color: rgb(248, 59, 90);
+}
+.lifeservice ul{
+    width:252px;
+}  
+.lifeservice ul li{
+    float:left;
+    width:63px;
+    height:71px;
+    line-height:71px ;
+    text-align: center;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+   
+}
+.lifeservice ul li i{
+    display:inline-block;
+    text-align: center;
+    width:24px;
+    height:28px;
+    background-color: pink;
+    margin-top: 12px;
+    background: url(../images/精灵图.png) no-repeat -644px -251px;
+}
+
+/* .lifeservice ul li::before{
+    content:"♬";
+} */
+.bargin{
+    margin-top:5px;
+}
+/* 首页主体部分——end */
+/* recom推荐模块--start */
+.recom{
+    height:163px;
+    background-color: black;
+    margin-top:12px;
+}
+.recom .recom_hd{
+    float:left;
+    height:163px;
+    width:205px;
+    background-color: rgb(252, 46, 80);
+    /* text-align: center;
+    
+    padding-top: 30px; */
+}
+.recom .recom_bd{
+    float:left;
+    height:163px;
+    background-color: rgb(247, 105, 126);
+    
+}
+.recom_bd ul li{
+    float:left;
+    position: relative;
+}
+ .recom_bd ul li img{
+    width: 248px;
+    height: 163px;
+    /* 还留出来一点小缝隙，掩埋掉，recom背景颜色 变：黑加紫色 */
+}
+
+.recom_bd ul li:nth-child(-n+3)::after{
+    /* li:nth-child(-n+3)::after从第三个开始往回算 */
+   content:'';
+   position:absolute;
+   /* 确定上下距离时需要定位 */
+   right:0;
+   top:10px;
+   width:1px;
+   height: 145px;
+   background-color: #ddd;
+}
+
+/* recom推荐模块--end */
+/* 首页楼层模块 start */
+/* 电器模块 */
+.box_hd{
+    height: 30px;
+    border-bottom:2px solid #c81623;
+}
+.box_hd h3{
+    float:left;
+    font-size: 18px;
+    color:#c81623;
+    font-weight: 400;
+    /*  font-weight: 400;为什么没变化,关键是要特指h3 */
+}
+.tab_list{
+    float:right;
+    line-height: 30px;
+}
+.tab_list ul li{
+    float:left;
+}
+.tab_list ul li a{
+    margin:0 15px;
+}
+.floor .w{
+    margin-top: 30px;
+}
+.box_bd{
+    height:361px;
+    background-color: pink;
+}
+.tab_list_item>div{
+    float: left;
+    height: 361px;
+    border-right: 2px solid greenyellow;
+}
+.col_210{
+    background-color: rgb(252, 85, 112) ;
+    width:210px;
+   
+  
+}
+.col_210 ul li a{
+    display:block;
+    float:left;
+    width: 85px;
+    height: 34px;
+    color:black;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    background-color: rgb(252, 85, 112);
+}
+.col_210 ul li a:nth-child(even){
+    margin-left: 10px;
+}
+.col_210 ul li a:nth-child(odd){
+    margin-left: 10px;
+}
+/* .col_210 ul li a img{
+    width:210px;
+    height: 300px;
+} */
+/* 为什么限制不了它的宽高 因为这个a标签不在li里面 */
+.col_210 a img{
+    width:208px;
+    height:260px;
+}
+.col_329{
+    width:329px;  
+}
+.col_221{
+    width:221px;
+   
+}
+.col_221 a img{
+    width:220px;
+}
+.col_219{
+    width:219px;
+}
+.bb{
+    /* 如果a包含有宽度的盒子，a需要转换为块元素 */
+    display:block;
+    margin-bottom: 1px;
+    border-bottom: 2px solid greenyellow;
+}
+
+
+/* 首页楼层模块 end */
